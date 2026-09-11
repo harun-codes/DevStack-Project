@@ -79,4 +79,30 @@ The main goals of this project are:
 - Practice handling user interactions and events
 
 
+1.What is JSX, and why is it used in React?
+- JSX is the JavaScript XML.JSX is used because it makes writing and understanding the UI much easier.
 
+2.What is the difference between props and state?
+-Props -- used to pass data from a parent component to a child component.
+-State -- used to store data inside a component that can change and Update.
+
+3.What does the useState hook do, and where did you use it in this project?
+-useState is a React Hook that store data in a component and update that data when something changes.
+
+4.What does the useEffect hook do, and why did you need it to load the JSON data?
+-useEffect is a React Hook used to run some code after a component renders. It is commonly used for tasks like fetching data, calling APIs, or working with external data.
+
+5.Why does every item in a .map() list need a unique key prop?
+-When we use .map() to display a list, React needs a way to identify each item.That's why we use a unique Key.
+
+6.What is conditional rendering? Show one place you used it (example: the empty stack message).
+-Conditional rendering means showing different UI depending on whether a condition is true or false.
+
+{selectedTechnology.length === 0 ? (
+  <p>Your stack is empty</p>
+) : (
+  <StackList />
+)}
+
+7.How do you pass data from a parent component to a child component, and how does a child send something back to the parent?
+-A parent component passes data to a child component using props. A child cannot directly change the parent's state. Instead, the parent passes a function to the child as a props.
