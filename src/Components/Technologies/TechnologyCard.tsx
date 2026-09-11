@@ -82,7 +82,7 @@ const TechnologyCard = ({
                                 : "bg-black hover:bg-gray-800"
                         }`}
                     >
-                        {isSelected ? "Add to Stack" : "+ Add to Stack"}
+                        {isSelected ? "✓Added to Stack" : "Add to Stack"}
                     </button>
                 </div>
 
