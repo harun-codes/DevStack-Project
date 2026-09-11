@@ -6,7 +6,7 @@ const Footer = () => {
     <>
       <div className="divider mt-15"></div>
 
-      <div className="container mx-auto grid grid-cols-4 mt-12 mb-8">
+      <div className="max-w-6xl mx-auto grid grid-cols-4 mt-12 mb-8">
         <div>
           <img src={Logo} alt="" />
           <p className="mt-4 text-md">
@@ -46,7 +46,7 @@ const Footer = () => {
 
       <div className="divider"></div>
 
-      <div className="container mx-auto flex justify-between mb-6 text-slate-500">
+      <div className="max-w-6xl mx-auto flex justify-between mb-6 text-slate-500">
         <p>©2026 DevStack.All rights reserved</p>
         <div className="flex justify-around gap-4">
           <p>Privacy</p>

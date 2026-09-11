@@ -4,7 +4,7 @@ import Banner from "./assets/banner-stack.png"
 const Bannar = () => {
     return (
         <>
-        <div className="container grid grid-cols-2 mx-auto pt-10 items-center">
+        <div className="max-w-6xl grid grid-cols-2 mx-auto pt-10 items-center">
 
             <div>
           
