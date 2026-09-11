@@ -1,36 +1,82 @@
-<<<<<<< HEAD
-# DevStack-Project
-=======
-# React + TypeScript + Vite
+Tech Stack Builder
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+A beautiful and interactive Technology Stack Builder built with React and TypeScript.  
+Users can explore different technologies, view their category, difficulty level, rating, and add their favorite technologies to their personal stack.
 
-Currently, two official plugins are available:
+About The Project
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+Tech Stack Builder is a frontend web application that helps users create and manage their own technology stack.
 
-## React Compiler
+The application displays different technologies such as React, Next.js, Node.js, Express.js, MongoDB, PostgreSQL, and more.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Users can:
+- Browse available technologies
+- View technology details
+- Add technologies to their stack
+- Remove individual technologies
+- Remove all selected technologies
+- Get toast notifications when technologies are added or removed
+  
+Technologies Used
 
-## Expanding the Oxlint configuration
+The project was built using the following technologies:
 
-If you are developing a production application, we recommend enabling type-aware lint rules by installing `oxlint-tsgolint` and editing `.oxlintrc.json`:
+- React – For building the user interface
+- TypeScript – For type-safe development
+- Tailwind CSS – For styling and responsive design
+- DaisyUI – For UI components and styling
+- React Toastify – For displaying success notifications
+- Vite – For fast development and build tooling
 
-```json
-{
-  "$schema": "./node_modules/oxlint/configuration_schema.json",
-  "plugins": ["react", "typescript", "oxc"],
-  "options": {
-    "typeAware": true
-  },
-  "rules": {
-    "react/rules-of-hooks": "error",
-    "react/only-export-components": ["warn", { "allowConstantExport": true }]
-  }
-}
-```
+Features
 
-See the [Oxlint rules documentation](https://oxc.rs/docs/guide/usage/linter/rules) for the full list of rules and categories.
->>>>>>> 75ffe1d (First commit)
+1. Technology Selection
+
+Users can browse different technologies and add them to their personal stack by clicking the + Add to Stack button.
+
+Each technology card displays:
+
+- Technology name
+- Technology icon
+- Category
+- Difficulty level
+- Rating
+- Badge such as Popular or Fast
+- Technology description
+
+2. Personal Technology Stack
+
+The Your Stack section displays all technologies selected by the user.
+
+Users can easily see:
+
+- Number of selected technologies
+- Technology name
+- Technology icon
+Users can also remove an individual technology from their stack.
+
+3. Interactive Notifications
+
+The application provides toast notifications when users interact with their stack.
+
+For example:
+
+- `React added to stack`
+- `React removed`
+- `All technologies were removed`
+
+This makes the application more interactive and provides immediate feedback to the user.
+
+Project Goals
+
+The main goals of this project are:
+
+- Practice React component-based development
+- Practice TypeScript with React
+- Manage state using React state
+- Build reusable technology cards
+- Create a clean and responsive user interface
+- Practice handling user interactions and events
+
+
+
