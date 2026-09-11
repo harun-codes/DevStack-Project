@@ -1,18 +1,25 @@
 // import React from 'react';
+import type { Dispatch, SetStateAction } from 'react';
 import type { TechType } from '../../types/types';
 import TechnologyCard from './TechnologyCard';
 
+interface TechnologyProps {
+    Tech: TechType[]  ,
+    selectedTechnology : TechType[]
+    setSelectedTechnology : Dispatch<SetStateAction<TechType[]>>
+
+}
 
 
-const AvailableTechnology = ({ Tech }: { Tech: TechType[] }) => {
+const AvailableTechnology = ({ Tech , selectedTechnology, setSelectedTechnology}: TechnologyProps ) => {
 
     // console.log(Tech, "Available ") 
     return (
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-7">
+        <div className="grid grid-cols-3 gap-6 mt-7">
             {
-                Tech.map((Technology: TechType, ind: number) => {
+                Tech.map((Technology: TechType) => {
                     return (
-                            <TechnologyCard  key={ind} Technology={Technology}></TechnologyCard>
+                            <TechnologyCard  key={Technology.id} Technology={Technology} selectedTechnology={selectedTechnology} setSelectedTechnology={setSelectedTechnology}></TechnologyCard>
                     )
                 })
             }
