@@ -1,6 +1,7 @@
 // import React from 'react';
 import type { Dispatch, SetStateAction } from 'react';
 import type { TechType } from '../../types/types';
+import { toast } from 'react-toastify';
 
 interface TechnologyCardProps {
         Technology: TechType,
@@ -23,7 +24,7 @@ const TechnologyCard = ({
         if (isSelected) {
             return;
         }
-
+        toast.success(`${Technology.name} is selected`)
         setSelectedTechnology([
             ...selectedTechnology,
             Technology

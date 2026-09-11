@@ -1,5 +1,7 @@
 import type { Dispatch, SetStateAction } from "react";
 import type { TechType } from "../../types/types";
+import { toast } from "react-toastify";
+import Technology from "./Technology";
 
 
 interface YourStackProps {
@@ -14,19 +16,25 @@ const YourStack = ({
 
     const handleRemove = (id: number) => {
 
-        const remainingTechnology =
-            selectedTechnology.filter(
-                (Technology) => Technology.id !== id
-            );
+    const technologyToRemove = selectedTechnology.find(
+        (technology) => technology.id === id
+    );
 
-        setSelectedTechnology(remainingTechnology);
+    const remainingTechnology = selectedTechnology.filter(
+        (technology) => technology.id !== id
+    );
 
-    };
+    setSelectedTechnology(remainingTechnology);
+
+    if (technologyToRemove) {
+        toast.success(`${technologyToRemove.name} removed`);
+    }
+};
 
     const handleRemoveAll = () => {
 
         setSelectedTechnology([]);
-
+        toast.success(`All the Technologies was Removed`)
     };
 
 
