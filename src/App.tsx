@@ -3,7 +3,7 @@ import Nav from "./Nav"
 import Bannar from "./Bannar"
 import type { TechType } from "./types/types";
 import Technology from "./Components/Technologies/Technology";
-// import Footer from "./Footer";
+import Footer from "./Footer";
 
 
 const TechFetch = async (): Promise<TechType[]> => {
@@ -29,7 +29,7 @@ function App() {
 
         </Suspense>
 
-        {/* <Footer></Footer> */}
+        <Footer></Footer>
     </>
   )
 }
