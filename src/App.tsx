@@ -1,6 +1,6 @@
 // import { Suspense, useState } from "react";
 import Nav from "./Nav"
-// import Bannar from "./Bannar"
+import Bannar from "./Bannar"
 // import type { TechType } from "./types/types";
 // import Technology from "./Components/Technologies/Technology";
 // import Footer from "./Footer";
@@ -22,8 +22,8 @@ function App() {
   return (
     <>
         <Nav></Nav>
-        {/* <Bannar></Bannar>
-        <Suspense fallback={<h2>Loading....</h2>}>
+        <Bannar></Bannar>
+        {/* <Suspense fallback={<h2>Loading....</h2>}>
           
           <Technology TechPromise={TechPromise}></Technology>
 
